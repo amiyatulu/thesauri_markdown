@@ -1,5 +1,6 @@
 from django.conf.urls import include, url
 from synonyms import views
+app_name = 'synonyms'
 urlpatterns = [
         url(r'^home/$',views.get_home, name="get_home"),
         url(r'^$',views.get_home, name="get_home"),
