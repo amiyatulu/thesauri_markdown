@@ -1,3 +1,3 @@
 # thesauri
 
-![Demo][demo.png]
+![Demo](demo.png)
