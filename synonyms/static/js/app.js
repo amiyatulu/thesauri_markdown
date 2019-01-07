@@ -14,6 +14,12 @@ myApp.config(['$httpProvider', function($httpProvider){
 
 
 myApp.controller('mainController', ['$scope', '$http', '$cookies', function($scope, $http, $cookies) {
+     $scope.$watch(function(){
+  MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+
+  return true;
+});
+
      $scope.textarea4selection = "";
      $scope.textselection="";
     $scope.$watch('textselection', function(newValue, oldValue){
@@ -54,21 +60,16 @@ myApp.controller('mainController', ['$scope', '$http', '$cookies', function($sco
                 // console.log(data[paragraph]);
                 //  console.log(paragraph);
                 //   console.log(data);
+                 
+                 
                 });
 
 
               });
-
-
-
-
-
-
-
-
-  console.log("hello world");
+ 
 
 }]);
+
 
 myApp.controller('secondController', ['$scope', function($scope){
     $scope.name = "Second";
