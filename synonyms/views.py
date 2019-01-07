@@ -30,6 +30,7 @@ def get_markdown(request):
         data = json.loads(request.body.decode("utf-8"))
     else:
         raise Http404("Error")
-    html = markdown.markdown(data["para"])
+    # html = markdown.markdown(data["para"])
+    html = data["para"]
     response = JsonResponse({data["para"]:html})
     return response
