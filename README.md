@@ -1,1 +1,3 @@
 # thesauri
+
+![Demo][demo.png]
