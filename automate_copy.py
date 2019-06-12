@@ -2,7 +2,7 @@ from selenium import webdriver
 import pyperclip
 
 
-browser = webdriver.Firefox(firefox_profile='/home/amiya/.mozilla/firefox/siae7aef.default', firefox_binary="/usr/bin/firefox", executable_path=r"geckodriver/geckodriver")
+browser = webdriver.Firefox(firefox_profile='/home/amiya/.mozilla/firefox/47pclgb9.default', firefox_binary="/usr/bin/firefox", executable_path=r"geckodriver/geckodriver")
 browser.get('http://localhost:8000')
 assert 'Thesauri' in browser.title
 pyperclip.copy("Thesauri")
